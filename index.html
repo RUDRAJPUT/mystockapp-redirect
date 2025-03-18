@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function redirectToApp() {
+            const fragment = window.location.hash.substr(1);
+            window.location = 'mystockapp://oauth?' + fragment;
+        }
+        window.onload = redirectToApp;
+    </script>
+</head>
+<body>
+    Redirecting to MyStockApp...
+</body>
+</html>
